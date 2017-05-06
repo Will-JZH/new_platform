@@ -4,6 +4,7 @@ public class CompositeService
 {
 	private Integer id;
 	private String serviceName;
+	private String serviceContent;
 	private Float totalPrice;
 	private Float totalTime;
 	
@@ -22,6 +23,14 @@ public class CompositeService
 	public void setServiceName(String serviceName)
 	{
 		this.serviceName = serviceName;
+	}
+	public String getServiceContent()
+	{
+		return serviceContent;
+	}
+	public void setServiceContent(String serviceContent)
+	{
+		this.serviceContent = serviceContent;
 	}
 	public Float getTotalPrice()
 	{

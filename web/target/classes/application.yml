@@ -1,0 +1,18 @@
+server:
+  port: 8083
+  context-path: /platform
+management:
+  port: 8008
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloudplatform
+    username: root
+    password: 893893
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    connection-timeout: 5000
+    idle-timeout: 12000
+    max-lifetime: 900000
+    minimum-idle: 5
+    maximum-pool-size: 20
+    connection-test-query: SELECT 1
